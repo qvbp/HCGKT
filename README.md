@@ -1,4 +1,4 @@
-# HCGKT(IJCAI 2025)
+# HCGKT(AIED 2025)
 
 ## Installation
 Use the following command to install HCGKT:
