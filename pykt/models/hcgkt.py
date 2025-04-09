@@ -50,6 +50,8 @@ class HCGKT(nn.Module):
 
         matrix = None 
         dataset_name = None
+        # the xxx.pt file of pre_load_gcn can be found in :
+        # https://drive.google.com/drive/folders/1JWstsquI3TzbUlqB1EyCbjem4qPyRLCh?usp=drive_link
         if self.emb_type.find('as09')!=-1:
             pre_load_gcn = "../data/assist2009/ques_skill_gcn_adj.pt"
             matrix = torch.load(pre_load_gcn).to(device)

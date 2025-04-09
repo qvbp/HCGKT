@@ -107,6 +107,8 @@ def model_forward(model, data, opt, emb_size, dataset_name, step_size=None, step
         grad_clip = grad_clip
         mm = mm
 
+        # the xxx.pt file of pre_load_gcn can be found in :
+        # https://drive.google.com/drive/folders/1JWstsquI3TzbUlqB1EyCbjem4qPyRLCh?usp=drive_link
         matrix = None
         if dataset_name == 'assist2009':
             pre_load_gcn = "../data/assist2009/ques_skill_gcn_adj.pt"

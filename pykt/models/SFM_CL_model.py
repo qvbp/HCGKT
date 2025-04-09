@@ -146,6 +146,9 @@ class SFM_CL(nn.Module):
         self.ans_embed = nn.Embedding(2, d).to(device)  
         self.change = nn.Linear(1024, d).to(device)
 
+        # the file_path can be found in :
+        # https://drive.google.com/drive/folders/1cUqLbBRlj_PPIIhySghyaIjlasIDGIwF?usp=drive_link
+
         file_path = f'../data/{dataset_name}/question_concept_map.npy'
         concept_map = torch.tensor(np.load(file_path)).unsqueeze(0) # [1, pro_max, max_concept]
 
